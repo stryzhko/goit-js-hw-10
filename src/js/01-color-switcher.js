@@ -10,8 +10,8 @@ refs.stopBtn.disabled = true;
 let timerId = null;
 
 function startChangeColor() {
+  refs.startBtn.disabled = true;  
   timerId = setInterval(() => {
-      refs.startBtn.disabled = true;
       refs.stopBtn.disabled = false;
     document.body.style.backgroundColor = `${getRandomHexColor()}`;
   }, 1000);
